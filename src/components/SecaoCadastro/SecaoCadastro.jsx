@@ -3,12 +3,12 @@ import Style from './SecaoCadastro.module.css'
 
 const SecaoCadastro = () => {
   return (
-    <section>
+    <section className={Style.secCadastro}>
       <div>
         <h3>Ajude o algoritmo a ser mais certeiro</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque tenetur veritatis porro illo odio ullam culpa obcaecati quas id molestias esse animi, minima corrupti totam ea modi est blanditiis et.</p>
       </div>
-      <form>
+      <form className={Style.form}>
         <input type="text" />
         <input type="email" />
         <input type="text" />

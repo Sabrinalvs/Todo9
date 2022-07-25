@@ -7,7 +7,7 @@ const Header = () => {
       <h2>uma seleção de produtos para você</h2>
       <h1>especial para você</h1>
       <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
-      <nav>
+      <nav className={Style.naveg}>
         <input type="button" value="Conheça a Linx" />
         <input type="button" value="Ajude o algoritmo" />
         <input type="button" value="Seus produtos" />

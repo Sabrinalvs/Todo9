@@ -4,14 +4,13 @@ import { useEffect, useState } from 'react'
 // import { Link } from 'react-router-dom'
 
 const CardProduto = ({dados}) => {
-    const {id, nome, foto, precoAntigo, preco, descricao} = dados
 
   return (
     <div className={S.container}>
-      <img src={foto} alt="" />
-      <h3>{nome}</h3>
-      <small>DE: <span> R${precoAntigo}</span></small>
-      <p>Por <span>R${preco}</span></p>
+      <img src={dados.image} alt="" />
+      <h3>{dados.name}</h3>
+      <small>DE: <span> R${dados.oldPrice}</span></small>
+      <p>Por <span>R${dados.price}</span></p>
     </div>
   )
 }

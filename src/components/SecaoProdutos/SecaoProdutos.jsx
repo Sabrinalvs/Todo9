@@ -2,37 +2,32 @@ import React from 'react'
 import Style from './SecaoProdutos.module.css'
 import CardProduto from '../CardProduto/CardProduto'
 import { useEffect, useState } from 'react'
-// import { listaProdutos } from '../../data/produtos'
 
 const SecaoProdutos = ({nome}) => {
-  const [req, setReq] = useState()
+  const [produtos, setProdutos] = useState()
+  const [urlNova, setUrlNova] = useState('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')
 
-  let resultado = [];
-
-    async function apiRequest() {
-      const response = await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`);
+    async function handleRequest() {
+      const response = await fetch(urlNova);
       const result = await response.json();
-      setReq(result);
-      resultado = result.products
-      console.log(resultado);
+      setUrlNova(result.nextPage);
+      console.log(result.nextPage);
+
+      const resposta = result.products
+      setProdutos(resposta);
     }
 
     useEffect(() => {
-      apiRequest()
+      handleRequest();
     }, [])
-
-    function mostrarProdutos() {
-      for (let i = 0; i < resultado.length; i ++){
-        console.log(produto[i]);
-        return (<CardProduto dados={produto[i]} key={produto.id} />)
-      }
-    }
 
   return (
     <section>
       <p>Sua seleção especial</p>
       <div>
-      {mostrarProdutos()}
+      {!!produtos && produtos.map((produto) => {
+          return (<CardProduto dados={produto} />)
+        })}
       </div>
     </section>
   )

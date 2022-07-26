@@ -1,0 +1,14 @@
+.secProdutos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    width: 80%;
+}

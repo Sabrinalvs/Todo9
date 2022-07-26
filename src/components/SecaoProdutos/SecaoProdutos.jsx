@@ -22,13 +22,14 @@ const SecaoProdutos = ({nome}) => {
     }, [])
 
   return (
-    <section>
+    <section className={Style.secProdutos}>
       <p>Sua seleção especial</p>
-      <div>
+      <div className={Style.cards}>
       {!!produtos && produtos.map((produto) => {
           return (<CardProduto dados={produto} />)
         })}
       </div>
+      <button>Ver mais</button>
     </section>
   )
 }

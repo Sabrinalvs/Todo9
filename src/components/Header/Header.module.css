@@ -1,15 +1,25 @@
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: #707070 0% 0% no-repeat padding-box;
-    height: 399px;
+    height: 400px;
     width: 100%;
+    /* transform: skewY(7deg) translateY(-80px); */
+    font-family: 'Basic', sans-serif;
 }
 .naveg {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 60%;
+    padding: 30px;
+}
+p {
+    padding: 20px;
+}
+.botao {
+    width: 22%;
+    height: 40px;
 }

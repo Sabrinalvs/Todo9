@@ -8,10 +8,10 @@ const Header = () => {
       <h1>especial para você</h1>
       <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
       <nav className={Style.naveg}>
-        <input type="button" value="Conheça a Linx" />
-        <input type="button" value="Ajude o algoritmo" />
-        <input type="button" value="Seus produtos" />
-        <input type="button" value="Compartilhe" />
+        <input type="button" className={Style.botao} value="Conheça a Linx" />
+        <input type="button" className={Style.botao} value="Ajude o algoritmo" />
+        <input type="button" className={Style.botao} value="Seus produtos" />
+        <input type="button" className={Style.botao} value="Compartilhe" />
       </nav>
     </header>
   )

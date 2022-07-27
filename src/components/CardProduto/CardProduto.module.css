@@ -42,11 +42,14 @@
     font-size: 1.8rem;
   }
   
-  .link {
-    font-size: 1.8rem;
-    background-color: tomato;
-    padding: 5px 20px;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-  }
+  @media (max-width: 430px){
+    .container{
+        flex-direction: row;
+        width: 95%;
+        height: 250px;
+    }
+    img{
+      width: 100%;
+    }
+    
+    }

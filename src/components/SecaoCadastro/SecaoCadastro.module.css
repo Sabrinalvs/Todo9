@@ -22,3 +22,18 @@
 .lab{
     padding: 10px;
 }
+
+@media (max-width: 710px){
+    .secCadastro{
+        flex-direction: column;
+        height: 650px;
+        align-items: center;
+    }
+    .descricao{
+        width: 100%;
+    }
+    .form{
+        width: 80%;
+    }
+    
+    }

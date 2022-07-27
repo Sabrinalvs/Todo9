@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className={Style.footer}>
       <div className={Style.forma}>
-        <p>Linx Impulse</p>
-        <p>2019</p>
+        <p className={Style.sk}>Linx Impulse</p>
+        <p className={Style.sk}>2019</p>
       </div>
     </footer>
   )

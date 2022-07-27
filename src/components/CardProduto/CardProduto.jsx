@@ -7,10 +7,14 @@ const CardProduto = ({dados}) => {
 
   return (
     <div className={S.container}>
-      <img src={dados.image} alt="" />
-      <h3>{dados.name}</h3>
-      <small>DE: <span> R${dados.oldPrice}</span></small>
-      <p>Por <span>R${dados.price}</span></p>
+      <div>
+        <img src={dados.image} alt="" />
+      </div>
+      <div>
+        <h3>{dados.name}</h3>
+        <small>DE: <span> R${dados.oldPrice}</span></small>
+        <p>Por <span>R${dados.price}</span></p>
+      </div>
     </div>
   )
 }

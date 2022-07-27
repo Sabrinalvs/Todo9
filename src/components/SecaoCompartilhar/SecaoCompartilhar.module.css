@@ -30,3 +30,16 @@ p{
     width: 20%;
     height: 30px;
 }
+
+@media (max-width: 710px){
+    .inp{
+        flex-direction: column;
+    }
+    .caixa2{
+        width: 50%;
+    }
+    .inp{
+        width: 90%;
+    }
+    
+    }

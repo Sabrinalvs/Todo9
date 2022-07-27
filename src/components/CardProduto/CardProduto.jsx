@@ -14,6 +14,7 @@ const CardProduto = ({dados}) => {
         <h3>{dados.name}</h3>
         <small>DE: <span> R${dados.oldPrice}</span></small>
         <p>Por <span>R${dados.price}</span></p>
+        <button>Comprar</button>
       </div>
     </div>
   )

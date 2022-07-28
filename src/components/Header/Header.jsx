@@ -13,6 +13,7 @@ const Header = () => {
         <input type="button" className={Style.botao} value="Seus produtos" />
         <input type="button" className={Style.botao} value="Compartilhe" />
       </nav>
+      <div className={Style.triangulo}></div>
     </header>
   )
 }

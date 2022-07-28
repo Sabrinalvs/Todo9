@@ -26,10 +26,11 @@ const SecaoProdutos = ({nome}) => {
       <p>Sua seleção especial</p>
       <div className={Style.cards}>
       {!!produtos && produtos.map((produto) => {
-          return (<CardProduto dados={produto} />)
+          return (<CardProduto dados={produto} key={produto.id}/>)
         })}
       </div>
-      <button>Ver mais</button>
+      <button onClick={handleRequest
+        }>Ver mais</button>
     </section>
   )
 }
